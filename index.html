@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="../css/main.css">
+<title>个人主页</title>
+</head>
+
+<body>
+	
+	<nav id="overlay">
+		<img src="../images/关闭.png" class="close-btn" id="close-menu">
+		<ul>
+			<li>
+				<a href="index.html">主页</a>
+				<span>Home</span>
+			</li>
+			<li>
+				<a href="#">关于我</a>
+				<span>About me</span>
+			</li>
+			<li>
+				<a href="#">作品集</a>
+				<span>Collection</span>
+			</li>
+			<li>
+				<a href="#">联系方式</a>
+				<span>Contact information</span>
+			</li>
+		</ul>
+	</nav>
+	
+	<header>
+		<a href="#" class="logo">mysite</a>
+		
+		<img src="../images/选项.png" class="menu-btn" id="open-menu">
+	</header>
+	
+	<section>
+		<h1>This is CC</h1>
+	</section>
+	
+	<script>
+	
+		var overlay = document.getElementById("overlay");
+		var closemenu = document.getElementById("close-menu");
+		
+		document.getElementById('open-menu').addEventListener('click', function(){
+			overlay.classList.add('show-menu');
+		});
+		
+		document.getElementById("close-menu").addEventListener("click", function(){
+			overlay.classList.remove("show-menu");
+		});
+		
+		
+	</script>
+	
+</body>
+</html>
